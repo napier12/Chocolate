@@ -14,5 +14,5 @@ const highlightRandomChocolate = () => {
   let randomIndex = Math.floor(Math.random() * 50) + 1;
   alert("Bring this number to the cashier: " + randomIndex);
   randomIndex = randomIndex % 10;
-  $(".wrapper .box:nth-child(" + randomIndex + ")").css("background-color", "yellow");
+  $(".wrapper .box:eq" + randomIndex + ")").css("background-color", "yellow");
 };
