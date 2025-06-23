@@ -1,0 +1,133 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate</title>
+    <style>
+      body{
+        background-color: #432f0e;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+      }
+
+      .box {
+        flex: 0 0 500px;
+        height: 200px;
+        background-color: #f2f4d4;
+        margin: 5px;
+        font-size: xx-large;
+        color: rgb(0, 0, 0);
+        box-sizing: border-box;
+        padding: 2px;
+        margin: 2px;
+        font-size: medium;
+      }
+      button {
+        background-color: #2b1e09;
+        color: #ffffff;
+        font-size: larger;
+      }
+      h1 {
+        width: 100%;
+
+        background-color: #2b1e09;
+        color: #ffffff;
+        text-align: center;
+        font-size: xx-large;
+      }
+      img {
+        height: 75px;
+        width: 75px;
+      }
+    </style>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="chocolate.js"></script>
+  </head>
+  <body>
+    <h1>Chocolate Candies</h1>
+    <p>
+      <button type="button" onclick="showCalories()">Show Calories and Content </button>
+      <button type="button" onclick="highlightRandomChocolate()">
+        Click to win a random free sample
+      </button>
+    </p>
+    <div class="wrapper">
+      <div class="box">
+        <img src = "plain_milk.jpg">
+        <p class="question">
+          Plain Milk
+        </p>
+        <p class="calories">110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar</p>
+      </div>
+      <div class="box">
+        <img src = "plain_dark.jpg">
+        <p class="question">Plain Dark</p>
+        <p class="calories">100 calories, smooth dark chocolate, ingredients: cocoa butter, milk, sugar</p>
+      </div>
+      <div class="box">
+        <img src = "plain_hybrid.jpg">
+        <p class="question">Plain Hybrid</p>
+        <p class="calories">105 calories, smooth milk chocolate and dark chocolate side by side, ingredients: cocoa butter, milk, sugar</p>
+      </div>
+      <div class="box">
+        <img src ="nutter_butter.jpg">
+        <p class="question">Nut Butter Cup</p>
+        <p class="calories">130 calories, smooth milk chocolate, peanut butter filling, ingredients: cocoa butter, milk, sugar</p>
+      </div>
+      <div class="box">
+        <img src = "baileys_cup.jpg">
+        <p class="question">
+          Bailey's Cup
+        </p>
+        <p class="calories">90 calories, smooth milkchocolate with Bailey's Irish Cream filling, 
+          ingredients: cocoa butter, milk, sugar, Bailey's Cream filling</p>
+      </div>
+      <div class="box">
+        <img src = "rum_barrel.jpg">
+        <p class="question">
+          Rum Barrel
+        </p>
+        <p class="calories">110 calories, smooth dark chocolate with rum-coconut filling, 
+          ingredients: cocoa butter, milk, sugar, rum, coconut</p>
+      </div>
+      <div class="box">
+        <img src = "orange_fondant.jpg">
+        <p class="question">
+          Orange Fondant
+        </p>
+        <p class="calories">125 calories, dark chocolate with orange fondant filling, 
+          ingredients: cocoa butter, milk, sugar, orange cream, orange zest</p>
+      </div>
+      <div class="box">
+        <img src = "cappuccino_cup.jpg">
+        <p class="question">Cappuccino Cup</p>
+        <p class="calories">
+          	130 calories, dark chocolate with coffee cream filling, 
+            ingredients: cocoa butter, milk, sugar, coffee-vanilla cream, grated coffee beans</p>
+      </div>
+      <div class="box">
+        <img src = "pistachio_diamond.jpg">
+        <p class="question">Pistachio Diamond</p>
+        <p class="calories">
+          140 calories, milk chocolate, almond butter filling, large pistachio, 
+          filling: cocoa butter, milk, sugar, nut butter, pistachio.</p>
+      </div>
+      <div class="box">
+        <img src = "toffee_crunch.jpg">
+        <p class="question">Toffee Crunch</p>
+        <p class="calories">
+          	130 calories, dark chocolate, soft toffee filling, rock salt and peanut brittle, 
+            ingredients: cocoa butter, milk, sugar, toffee, salt, toffee brittle
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
